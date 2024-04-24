@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Formular</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<div class="login-container">
+    <div class="logo">
+    </div>
+
+    <h2>Login</h2>
+
+    <form action="login.php" method="post">
+        <!-- Textbox for username or email -->
+        <label for="usernameOrEmail">Benutzername oder E-Mail:</label>
+        <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+
+        <!-- Textbox for masked password input -->
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- 2-Faktor-Authentifizierung -->
+        <label for="twoFactor">2-Faktor-Authentifizierung:</label>
+        <input type="text" id="twoFactor" name="twoFactor">
+
+        <!-- Link "Passwort vergessen" -->
+        <p class="forgot-password"><a href="passwort_vergessen.html">Passwort vergessen?</a></p>
+
+        <!-- Login button -->
+        <button type="submit">Login</button>
+
+        <!-- Alternative login with Face-ID, etc. -->
+        <p class="alternative-login"><a href="face_id_login.html">Alternative Login (Face-ID, etc.)</a></p>
+    </form>
+
+    <!-- Link zurück zur Homepage der Bank -->
+    <p class="back-to-home"><a href="index.html">Zurück zur Homepage</a></p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Button Beispiel</title>
+    </head>
+    
+    <body>
+    
+    <!-- Ein einfacher Button mit einem Link zur Zielwebsite -->
+    <button onclick="redirectToExternalSite()">Weiter zur kontoübericht</button>
+    
+    <script>
+        function redirectToExternalSite() {
+            window.location.href = 'https://www.zielwebsite.com';
+        }
+    </script>
+    
+    </body>
+    
+    </html>
